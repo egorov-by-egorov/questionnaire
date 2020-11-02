@@ -112,7 +112,6 @@ class Quiz extends Component
         return (
             <section className={classes.Quiz}>
                 <div className={classes.QuizWrapper}>
-                    <h1>Ответье на все вопросы</h1>
                     {
                         this.state.isFinished
                             ? <FinisfedQuiz

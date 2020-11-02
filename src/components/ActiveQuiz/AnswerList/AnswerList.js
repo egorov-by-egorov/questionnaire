@@ -1,19 +1,21 @@
 import React from 'react'
 import classes from './AnswerList.module.css'
-import AnswerItem from './AnswerItem/AnswerItem'
 
 const AnswerList = props => {
 
     return (
         <ul className={classes.AnswerList}>
             { props.answers.map((answer, index) => {
+                const cls = [classes.AnswerItem];
+                cls.push(classes[props.answerState ? props.answerState[answer.id] : null]);
                 return (
-                    <AnswerItem
+                    <li
                         key={index}
-                        answer={answer}
-                        onAnswerItemClickHandler={props.onAnswerItemClickHandler}
-                        answerState={props.answerState ? props.answerState[answer.id] : null}
-                    />
+                        className={cls.join(' ')}
+                        onClick={() => props.onAnswerItemClickHandler(answer.id)}
+                    >
+                        { answer.text }
+                    </li>
                 )
             }) }
         </ul>
