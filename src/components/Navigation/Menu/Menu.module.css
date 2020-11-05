@@ -1,0 +1,28 @@
+.Menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 300px;
+    padding: 20px 10px;
+    background-color: #fff;
+    z-index: 90;
+    transform: translateX(0px);
+    transition: transform .3s ease-in;
+}
+.Menu.close {
+    transform: translateX(-300px);
+}
+.Menu__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.Menu__item {
+    margin-bottom: 10px;
+}
+.Menu__item a {
+    font-size: 30px;
+    padding: 10px 20px;
+}
