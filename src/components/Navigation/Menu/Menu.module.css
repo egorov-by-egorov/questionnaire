@@ -26,3 +26,6 @@
     font-size: 30px;
     padding: 10px 20px;
 }
+.Menu__item a:hover, .active {
+    opacity: .7;
+}
