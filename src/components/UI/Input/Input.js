@@ -1,0 +1,22 @@
+import React from 'react';
+import classes from './Input.module.css';
+
+const Input = props => {
+    const inputType = props.type || 'text';
+    const cls = [classes.Input]
+    const htmlFor = `${inputType}-${Math.floor(Math.random() * 999)}`;
+    return (
+        <div className={cls.join(' ')}>
+            <label htmlFor={htmlFor}>{props.label}</label>
+            <input
+                id={htmlFor}
+                type={props.type}
+                value={props.value}
+                onChange={props.onChange}
+            />
+            <span>{props.errorMessage}</span>
+        </div>
+    )
+}
+
+export default Input;
