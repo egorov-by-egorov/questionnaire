@@ -37,7 +37,7 @@ const FinisfedQuiz = props => {
                 </ul>
                 <p>Правильно { successCount } из { props.quiz.length }</p>
                 <div>
-                    <Button onRetryHandler={ props.onRetryHandler } type={"primary"}>Повторить</Button>
+                    <Button onClickHandler={ props.onClickHandler } type={"primary"}>Повторить</Button>
                     <Link to='/'>
                         <Button type={"success"}>Перейти в список тестов</Button>
                     </Link>

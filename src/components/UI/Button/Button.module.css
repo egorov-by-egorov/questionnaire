@@ -12,6 +12,7 @@
 }
 .Button:focus {
   outline: none;
+    background-color: #eee;
 }
 .Button:active {
     box-shadow: 2px 2px 1px rgba(255, 255, 255, .3);
