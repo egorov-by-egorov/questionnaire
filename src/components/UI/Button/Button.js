@@ -9,7 +9,7 @@ const Button = props => {
     return (
         <button
             className={ cls.join(' ') }
-            onClick={ props.onRetryHandler }
+            onClick={ props.onClickHandler }
             disabled={ props.disabled }
         >
             {props.children}
