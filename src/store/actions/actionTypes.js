@@ -7,3 +7,5 @@ export const FETCH_QUIZ_SET_STATE = 'FETCH_QUIZ_SET_STATE';
 export const FINISH_QUIZ = 'FINISH_QUIZ';
 export const QUIZ_NEXT_QUESTIONS = 'QUIZ_NEXT_QUESTIONS';
 export const QUIZ_RETRY = 'QUIZ_RETRY';
+export const AUTH_SUCCESS = 'AUTH_SUCCESS';
+export const AUTH_LOGOUT = 'AUTH_LOGOUT';
